@@ -1,3 +1,9 @@
+enum class Animals{
+    DOG, CAT, BEAR, LION;
+
+    fun toLowerCase() = name.toLowerCase().capitalize()
+}
+
 fun main(args: Array<String>) {
 //    val user = NewClass()
 //    user.printInfo(User())
@@ -11,6 +17,13 @@ fun main(args: Array<String>) {
     }
 
     checkDataTypes(user)
+
+    val animal = Animals.BEAR
+    when(animal){
+        Animals.CAT -> println("Cat")
+        Animals.BEAR -> println(animal.toLowerCase())
+        else -> println("Something else")
+    }
 
 }
 
